@@ -12,6 +12,8 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  // 如果仓库名不是 fluent-cv-display，记得把下面这行改成你的仓库名
+  base: "/fluent-cv-display/",
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
