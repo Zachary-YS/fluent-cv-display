@@ -8,12 +8,15 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// 在 GitHub Pages 上部署到 /fluent-cv-display/ 子路径，需要设置 basename
+const routerBaseName = "/fluent-cv-display";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={routerBaseName}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
