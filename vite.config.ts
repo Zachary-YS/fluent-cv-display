@@ -12,8 +12,8 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  // 如果仓库名不是 fluent-cv-display，记得把下面这行改成你的仓库名
-  base: "/fluent-cv-display/",
+  // GitHub Pages 项目页，仓库名为 Website.io
+  base: "/Website.io/",
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {

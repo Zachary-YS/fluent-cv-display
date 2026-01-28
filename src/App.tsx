@@ -8,8 +8,8 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// 在 GitHub Pages 上部署到 /fluent-cv-display/ 子路径，需要设置 basename
-const routerBaseName = "/fluent-cv-display";
+// 在 GitHub Pages 上部署到 /Website.io/ 子路径，需要设置 basename
+const routerBaseName = "/Website.io";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
